@@ -24,11 +24,11 @@ Just run ``test_script.sh`` from the root directory. I use relative paths in the
 
 ## Code design
 ### Structure
-The application is splited into three files, header, implementation and main files. This design makes it easy to extand.
+The application is splited into three files, header, implementation and main files. This design makes it easy to be extanded.
 
 
 ### NAT rule
-In real scenario, the search speed is most important for NAT performance. Therefore, I use hash map to store the translation rules. It is time complexity is O(1) and space complexity is O(n).
+In real scenario, the search speed is most important for NAT performance. Therefore, I use hash map to do translation. It is time complexity is O(1) and space complexity is O(n).
 
 Since we have "\*" in NAT rule, I store the hash key as the following rules.
 if original <ip:port>, then key is <ip:port>.
