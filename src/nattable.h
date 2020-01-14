@@ -18,7 +18,7 @@ public:
 	string SearchTable(string pair);
 }; 
 
-/* Heler functions */
+/* Helper functions */
 vector<string> Split(const string &str, const string &delimiter);
 void HandleError(int msg_id);
 
